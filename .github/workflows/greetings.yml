@@ -1,0 +1,13 @@
+name: Greet Containerkonferansen
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-workflow:
+    uses: robstrdev/actions/.github/workflows/reuse.yml@main
+    with:
+      name: "Containerkonferansen"
+
